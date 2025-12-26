@@ -1,0 +1,20 @@
+.new-rocker-regular {
+  font-family: "New Rocker", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  font-family: "New Rocker", system-ui;
+  background-color: #f30707a7;
+  margin: 0 auto;
+}
+nav>a {
+    background-color: yellow;
+    border: 2px solid black;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
