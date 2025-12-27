@@ -5,8 +5,9 @@
 }
 * {
   font-family: "New Rocker", system-ui;
-  background-color: #f30707a7;
+  background-color: #000000;
   margin: 0 auto;
+  color: rgba(228, 228, 6, 0.964);
 }
 nav > a {
   background-color: yellow;
@@ -19,4 +20,20 @@ nav > a {
   color: black;
 
   padding: 10px;
+}
+.lista-miembros {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.miembro {
+  text-align: center;
+  max-width: 200px;
+}
+
+.miembro img {
+  border-radius: 10px;
 }
