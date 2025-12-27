@@ -11,6 +11,11 @@ left:50%;
   color: rgba(228, 228, 6, 0.964);
 }
 nav,footer{
+    display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
   background-color: yellow;
 
 }
