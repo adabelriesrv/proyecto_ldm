@@ -28,6 +28,9 @@ nav > a {
   gap: 20px;
   justify-content: center;
 }
+nav>a:hover{
+  background-color: rgba(246, 246, 246, 0.941);
+}
 
 .miembro {
   text-align: center;
