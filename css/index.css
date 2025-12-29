@@ -4,53 +4,51 @@
 }
 
 @font-face {
-  font-family: 'kurt';
+  font-family: "kurt";
   src: url("../fuentes/kurt/kurt-Bold.ttf");
 }
 
-
 * {
   font-family: "New Rocker", system-ui;
-  background-color: #0F0F0F;
-  color: #EAEAEA;
+  background-color: #0f0f0f;
+  color: #eaeaea;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
 }
-
 
 nav {
   display: flex;
   gap: 20px;
   justify-content: center;
   margin: 20px 0;
-  background-color: #0F0F0F;
+  background-color: #0f0f0f;
 }
 
 nav > a {
-  border: 1px solid #3A3A3A;
+  border: 1px solid #3a3a3a;
   padding: 10px 16px;
-  background-color: #1C1C1C;
-  color: #FFD100;
+  background-color: #1c1c1c;
+  color: #ffd100;
   transition: all 0.2s ease-in-out;
 }
 
 nav > a:hover {
-  background-color: #FFD100;
-  color: #0F0F0F;
+  background-color: #ffd100;
+  color: #0f0f0f;
 }
-
 
 ul p {
-  color: #EAEAEA;
+  color: #eaeaea;
 }
-
 
 section {
   margin: 20px;
   padding: 20px;
-  background-color: #1C1C1C;
-  border: 2px solid #FFD100;
+  background-color: #1c1c1c;
+  border: 2px solid #ffd100;
 }
-
 
 .miembro {
   list-style: none;
@@ -64,36 +62,36 @@ section {
 
 .miembro img {
   border-radius: 4px;
-  border: 2px solid #3A3A3A;
+  border: 2px solid #3a3a3a;
 }
 
-
-table {
+table,th,td {
   width: 100%;
   border-collapse: collapse;
-  background-color: #1C1C1C;
+  background-color: #1c1c1c;
+   font-family: "kurt";
 }
 
 th {
-  background-color: #0F0F0F;
-  color: #FFD100;
+  background-color: #0f0f0f;
+  color: #ffd100;
   padding: 10px;
-  border-bottom: 2px solid #FFD100;
+  border-bottom: 2px solid #ffd100;
 }
 
 td {
   padding: 10px;
-  border-bottom: 1px solid #3A3A3A;
+  border-bottom: 1px solid #3a3a3a;
 }
 
-td:nth-child(odd) {
-  background-color: #2A2A2A;
+td:nth-child(even) {
+  background-color: #2a2a2a;
+ 
 }
 
 tr:hover {
-  background-color: #3A3A3A;
+  background-color: #3a3a3a;
 }
-
 
 form {
   display: flex;
@@ -101,24 +99,31 @@ form {
   gap: 10px;
   max-width: 400px;
   margin: auto;
-  font-family: 'kurt';
+  font-family: "kurt";
 }
 
 input,
 textarea,
 button {
-  background-color: #2A2A2A;
-  color: #EAEAEA;
-  border: 1px solid #3A3A3A;
+  background-color: #2a2a2a;
+  color: #eaeaea;
+  border: 1px solid #3a3a3a;
   padding: 10px;
 }
 
 button {
-  background-color: #FFD100;
-  color: #0F0F0F;
+  background-color: #ffd100;
+  color: #0f0f0f;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #E6BC00;
+  background-color: #e6bc00;
 }
+#videos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
