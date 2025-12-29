@@ -1,68 +1,110 @@
 .new-rocker-regular {
   font-family: "New Rocker", system-ui;
-  font-weight: 400;
-  font-style: normal;
+  font-weight: 499;
 }
+
+@font-face {
+  font-family: "kurt";
+  src: url("../fuentes/kurt/kurt-Bold.ttf");
+}
+
 * {
-  
   font-family: "New Rocker", system-ui;
-  background-color: #000000;
-left:50%;
-  color: rgba(228, 228, 6, 0.964);
+  background-color: #0f0f0f;
+  color: #eaeaea;
   text-decoration: none;
-}
-nav,footer{
-    display: flex;
-  gap: 20px;
-  justify-content: center;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  background-color: yellow;
-
-}
-nav > a {
-  
-  border: 1px solid rgb(25, 0, 0);
-  border-radius: 10px;
-  display: block-inline;
-  text-align: center;
-
-  color: rgb(255, 230, 0);
-
-  padding: 10px;
-}
-section{
-  margin: 20px;
-  padding: 20px;
-  border: 2px solid #FFFF00;
-  border-radius: 10px;
-}
-.miembro{
-  list-style: none;
+  margin: 0;
   padding: 0;
+  box-sizing: content-box;
+}
+
+nav {
   display: flex;
   gap: 20px;
   justify-content: center;
 
+  margin: 20px 0;
+  background-color: #0f0f0f;
 }
+
+nav > a {
+  border: 1px solid #3a3a3a;
+  padding: 10px 16px;
+  background-color: #1c1c1c;
+  color: #ffd100;
+  transition: all 0.2s ease-in-out;
+}
+
 nav > a:hover {
-  background-color: rgba(246, 246, 246, 0.941);
+  background-color: #ffd100;
+  color: #0f0f0f;
 }
 
-.miembro {
-  text-align: center;
-  max-width: 200px;
+ul p {
+  color: #eaeaea;
 }
 
-.miembro img {
-  border-radius: 10px;
+section {
+  margin: 20px;
+  padding: 20px;
+  background-color: #1c1c1c;
+  border: 2px solid #ffd100;
 }
-table{
+
+
+table,th,td {
   width: 100%;
-  border-collapse: separate;
+  border-collapse: collapse;
+  background-color: #1c1c1c;
+   font-family: "kurt";
 }
-th{
-background-color:rgb(1, 0, 0);
-color: yellow;
-box-shadow: 50px 50px 50px black;
+
+th {
+  background-color: #0f0f0f;
+  color: #ffd100;
+  padding: 10px;
+  border-bottom: 2px solid #ffd100;
 }
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+td:nth-child(even) {
+  background-color: #2a2a2a;
+ 
+}
+
+tr:hover {
+  background-color: #3a3a3a;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+  font-family: "kurt";
+}
+
+input,
+textarea,
+button {
+  background-color: #2a2a2a;
+  color: #eaeaea;
+  border: 1px solid #3a3a3a;
+  padding: 10px;
+}
+
+button {
+  background-color: #ffd100;
+  color: #0f0f0f;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e6bc00;
+}
+
