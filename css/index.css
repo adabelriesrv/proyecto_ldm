@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 
+=======
+/* Fuentes */
+>>>>>>> 23096ec6e22a8329ef6b881904361a529ecb07fb
 .new-rocker-regular {
   font-family: "New Rocker", system-ui;
   font-weight: 400;
@@ -9,7 +13,11 @@
   src: url("../fuentes/kurt/kurt-Bold.ttf");
 }
 
+<<<<<<< HEAD
 
+=======
+/* Reset básico */
+>>>>>>> 23096ec6e22a8329ef6b881904361a529ecb07fb
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +28,11 @@
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 
+=======
+/* Navegación y footer */
+>>>>>>> 23096ec6e22a8329ef6b881904361a529ecb07fb
 nav,
 footer {
   display: flex;
@@ -45,7 +57,11 @@ nav > a:hover {
   color: #0f0f0f;
 }
 
+<<<<<<< HEAD
 
+=======
+/* Secciones */
+>>>>>>> 23096ec6e22a8329ef6b881904361a529ecb07fb
 section {
   margin: 20px;
   padding: 20px;
@@ -53,6 +69,7 @@ section {
   border: 2px solid #ffd100;
   border-radius: 10px;
 }
+<<<<<<< HEAD
 
 /* Listas */
 .miembro {
@@ -62,8 +79,22 @@ section {
 ul p {
   color: #eaeaea;
 }
+=======
+>>>>>>> 23096ec6e22a8329ef6b881904361a529ecb07fb
 
+/* Listas */
+.miembro {
+  list-style: none;
+}
 
+<<<<<<< HEAD
+=======
+ul p {
+  color: #eaeaea;
+}
+
+/* Tablas */
+>>>>>>> 23096ec6e22a8329ef6b881904361a529ecb07fb
 table {
   width: 100%;
   border-collapse: collapse;
@@ -91,7 +122,11 @@ tr:hover {
   background-color: #3a3a3a;
 }
 
+<<<<<<< HEAD
 
+=======
+/* Formularios */
+>>>>>>> 23096ec6e22a8329ef6b881904361a529ecb07fb
 form {
   display: flex;
   flex-direction: column;
