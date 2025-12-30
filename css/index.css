@@ -10,10 +10,52 @@
 
 * {
   font-family: "New Rocker", system-ui;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  background-color: #000000;
+left:50%;
+  color: rgba(228, 228, 6, 0.964);
+  text-decoration: none;
+}
+nav,footer{
+    display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: yellow;
+
+}
+nav > a {
+  
+  border: 1px solid rgb(25, 0, 0);
+  border-radius: 10px;
+  display: block-inline;
+  text-align: center;
+
+  color: rgb(255, 230, 0);
+
+  padding: 10px;
+}
+section{
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #FFFF00;
+  border-radius: 10px;
+}
+.miembro{
+  list-style: none;
+=======
+>>>>>>> 50b45be527910905d1292d93986c6b9a08c3d261
   background-color: #0f0f0f;
   color: #eaeaea;
   text-decoration: none;
   margin: 0;
+<<<<<<< HEAD
+=======
+>>>>>>> 0d4c56a49c92d465f3248460258258673986d3fb
+>>>>>>> 50b45be527910905d1292d93986c6b9a08c3d261
   padding: 0;
   box-sizing: content-box;
 }
@@ -22,9 +64,18 @@ nav {
   display: flex;
   gap: 20px;
   justify-content: center;
+<<<<<<< HEAD
 
   margin: 20px 0;
   background-color: #0f0f0f;
+=======
+<<<<<<< HEAD
+
+=======
+  margin: 20px 0;
+  background-color: #0f0f0f;
+>>>>>>> 0d4c56a49c92d465f3248460258258673986d3fb
+>>>>>>> 50b45be527910905d1292d93986c6b9a08c3d261
 }
 
 nav > a {
@@ -50,6 +101,20 @@ section {
   background-color: #1c1c1c;
   border: 2px solid #ffd100;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+table{
+  width: 100%;
+  border-collapse: separate;
+}
+th{
+background-color:rgb(1, 0, 0);
+color: yellow;
+box-shadow: 50px 50px 50px black;
+}
+=======
+>>>>>>> 50b45be527910905d1292d93986c6b9a08c3d261
 
 
 table,th,td {
@@ -108,3 +173,7 @@ button:hover {
   background-color: #e6bc00;
 }
 
+<<<<<<< HEAD
+=======
+>>>>>>> 0d4c56a49c92d465f3248460258258673986d3fb
+>>>>>>> 50b45be527910905d1292d93986c6b9a08c3d261
