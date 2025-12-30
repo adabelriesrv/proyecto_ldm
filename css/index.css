@@ -7,7 +7,9 @@
   font-family: "kurt";
   src: url("../fuentes/kurt/kurt-Bold.ttf");
 }
-
+#princ{
+  color: white;
+}
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +18,7 @@
   background-color: #0f0f0f;
   color: #eaeaea;
   text-decoration: none;
+  color: yellow;
 }
 
 nav,
@@ -32,7 +35,7 @@ nav > a {
   border-radius: 10px;
   padding: 10px 16px;
   background-color: #1c1c1c;
-  color: #ffd100;
+  color: #b0f503;
   text-align: center;
   transition: all 0.2s ease-in-out;
 }
@@ -42,9 +45,7 @@ nav > a:hover {
   color: #0f0f0f;
 }
 
-ul p {
-  color: #eaeaea;
-}
+
 
 table {
   width: 100%;
@@ -99,4 +100,51 @@ button {
 
 button:hover {
   background-color: #e6bc00;
+}
+
+/* FOCUS */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border: 2px solid #ffd100;
+  background-color: #1c1c1c;
+  box-shadow: 0 0 6px rgba(255, 209, 0, 0.4);
+}
+
+/* VALID */
+input:valid,
+textarea:valid,
+select:valid {
+  border: 2px solid #6b7b3d;
+  background-color: #1c1c1c;
+
+  background-image: url(../imagenesyvideos/valido.png);
+  background-position: 10px;
+  background-repeat: no-repeat;
+background-size: 100px ;
+}
+
+/* INVALID */
+input:invalid,
+textarea:invalid,
+select:invalid {
+  border: 2px solid #7a1f1f;
+  background-color: #1c1c1c;
+  box-shadow: 6px rgba(122, 31, 31, 0.5);
+}
+
+/* =========================
+   MENSAJES DE ESTADO
+========================= */
+.success {
+  color: #6b7b3d;
+}
+
+.error {
+  color: #7a1f1f;
+}
+
+.focused {
+  color: #ffd100;
 }
