@@ -122,11 +122,7 @@ tr:hover {
   background-color: #3a3a3a;
 }
 
-<<<<<<< HEAD
-
-=======
 /* Formularios */
->>>>>>> 23096ec6e22a8329ef6b881904361a529ecb07fb
 form {
   display: flex;
   flex-direction: column;
