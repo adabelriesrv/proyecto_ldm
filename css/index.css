@@ -1,6 +1,7 @@
+
 .new-rocker-regular {
   font-family: "New Rocker", system-ui;
-  font-weight: 499;
+  font-weight: 400;
 }
 
 @font-face {
@@ -8,81 +9,34 @@
   src: url("../fuentes/kurt/kurt-Bold.ttf");
 }
 
+
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "New Rocker", system-ui;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-  background-color: #000000;
-left:50%;
-  color: rgba(228, 228, 6, 0.964);
-  text-decoration: none;
-}
-nav,footer{
-    display: flex;
-  gap: 20px;
-  justify-content: center;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  background-color: yellow;
-
-}
-nav > a {
-  
-  border: 1px solid rgb(25, 0, 0);
-  border-radius: 10px;
-  display: block-inline;
-  text-align: center;
-
-  color: rgb(255, 230, 0);
-
-  padding: 10px;
-}
-section{
-  margin: 20px;
-  padding: 20px;
-  border: 2px solid #FFFF00;
-  border-radius: 10px;
-}
-.miembro{
-  list-style: none;
-=======
->>>>>>> 50b45be527910905d1292d93986c6b9a08c3d261
   background-color: #0f0f0f;
   color: #eaeaea;
   text-decoration: none;
-  margin: 0;
-<<<<<<< HEAD
-=======
->>>>>>> 0d4c56a49c92d465f3248460258258673986d3fb
->>>>>>> 50b45be527910905d1292d93986c6b9a08c3d261
-  padding: 0;
-  box-sizing: content-box;
 }
 
-nav {
+
+nav,
+footer {
   display: flex;
   gap: 20px;
   justify-content: center;
-<<<<<<< HEAD
-
   margin: 20px 0;
   background-color: #0f0f0f;
-=======
-<<<<<<< HEAD
-
-=======
-  margin: 20px 0;
-  background-color: #0f0f0f;
->>>>>>> 0d4c56a49c92d465f3248460258258673986d3fb
->>>>>>> 50b45be527910905d1292d93986c6b9a08c3d261
 }
 
 nav > a {
   border: 1px solid #3a3a3a;
+  border-radius: 10px;
   padding: 10px 16px;
   background-color: #1c1c1c;
   color: #ffd100;
+  text-align: center;
   transition: all 0.2s ease-in-out;
 }
 
@@ -91,59 +45,52 @@ nav > a:hover {
   color: #0f0f0f;
 }
 
-ul p {
-  color: #eaeaea;
-}
 
 section {
   margin: 20px;
   padding: 20px;
   background-color: #1c1c1c;
   border: 2px solid #ffd100;
+  border-radius: 10px;
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-table{
-  width: 100%;
-  border-collapse: separate;
+
+/* Listas */
+.miembro {
+  list-style: none;
 }
-th{
-background-color:rgb(1, 0, 0);
-color: yellow;
-box-shadow: 50px 50px 50px black;
+
+ul p {
+  color: #eaeaea;
 }
-=======
->>>>>>> 50b45be527910905d1292d93986c6b9a08c3d261
 
 
-table,th,td {
+table {
   width: 100%;
   border-collapse: collapse;
   background-color: #1c1c1c;
-   font-family: "kurt";
+  font-family: "kurt";
 }
 
-th {
-  background-color: #0f0f0f;
-  color: #ffd100;
-  padding: 10px;
-  border-bottom: 2px solid #ffd100;
-}
-
+th,
 td {
   padding: 10px;
   border-bottom: 1px solid #3a3a3a;
 }
 
+th {
+  background-color: #0f0f0f;
+  color: #ffd100;
+  border-bottom: 2px solid #ffd100;
+}
+
 td:nth-child(even) {
   background-color: #2a2a2a;
- 
 }
 
 tr:hover {
   background-color: #3a3a3a;
 }
+
 
 form {
   display: flex;
@@ -172,8 +119,3 @@ button {
 button:hover {
   background-color: #e6bc00;
 }
-
-<<<<<<< HEAD
-=======
->>>>>>> 0d4c56a49c92d465f3248460258258673986d3fb
->>>>>>> 50b45be527910905d1292d93986c6b9a08c3d261
