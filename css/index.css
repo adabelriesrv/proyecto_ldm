@@ -66,8 +66,9 @@ th {
   border-bottom: 2px solid #ffd100;
 }
 
-td:nth-child(even) {
+tdr:nth-child(odd) {
   background-color: #2a2a2a;
+  color: #eaeaea;
 }
 
 tr:hover {
@@ -109,29 +110,34 @@ select:focus {
   outline: none;
   border: 2px solid #ffd100;
   background-color: #1c1c1c;
-  box-shadow: 0 0 6px rgba(255, 209, 0, 0.4);
+  box-shadow:  6px rgba(255, 209, 0, 0.4);
 }
 
 /* VALID */
-input:valid,
-textarea:valid,
-select:valid {
+input[type="text"]:valid,input[type="email"]:valid,input[type="password"]:valid,input[type="tel"]:valid,
+select:valid,{
   border: 2px solid #6b7b3d;
   background-color: #1c1c1c;
 
   background-image: url(../imagenesyvideos/valido.png);
-  background-position: 10px;
+  background-position: right;
+  justify-content: center;
   background-repeat: no-repeat;
-background-size: 100px ;
+background-size: 10px ;
 }
 
-/* INVALID */
+
 input:invalid,
 textarea:invalid,
 select:invalid {
   border: 2px solid #7a1f1f;
   background-color: #1c1c1c;
   box-shadow: 6px rgba(122, 31, 31, 0.5);
+   background-image: url(../imagenesyvideos/forma-boton-incorrecto-3d_169241-5652.avif);
+  background-position: right;
+  justify-content: center;
+  background-repeat: no-repeat;
+background-size: 10px ;
 }
 
 /* =========================
