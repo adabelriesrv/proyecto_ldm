@@ -115,6 +115,21 @@ tbody td:nth-child(even):hover {
   background-color: #2a2a2a;
   color: #b0f503;
 }
+thead th {
+  background-color: #0f0f0f;
+  color: #9fd400;
+  border-bottom: 2px solid #2e2e2e;
+  padding: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Hover en th */
+thead th:hover {
+  background-color: #1c1c1c;
+  color: #c6ff00;
+}
 
 tbody td:nth-child(odd):hover {
   background-color: #3a4200;
