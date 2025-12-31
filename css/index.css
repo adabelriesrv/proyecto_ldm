@@ -100,13 +100,25 @@ td {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-
 tbody td:nth-child(even) {
-  background-color: #ffffff;
+  background-color: #1a1a1a;
+  color: #d6d6d6;
 }
 
 tbody td:nth-child(odd) {
-  background-color: #e9f600;
+  background-color: #2a2f00;
+  color: #e0e0e0;
+}
+
+/* Hover */
+tbody td:nth-child(even):hover {
+  background-color: #2a2a2a;
+  color: #b0f503;
+}
+
+tbody td:nth-child(odd):hover {
+  background-color: #3a4200;
+  color: #c6ff00;
 }
 
 tbody tr:nth-child(4n + 1) td:first-child,
