@@ -121,6 +121,7 @@ button {
   color: #eaeaea;
   border: 1px solid #3a3a3a;
   padding: 10px;
+  float: inline-start;
 }
 
 button {
