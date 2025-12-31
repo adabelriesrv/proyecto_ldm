@@ -21,14 +21,18 @@
   color: yellow;
 }
 
-nav,
-footer {
+nav,header {
   display: flex;
   gap: 20px;
   justify-content: center;
   margin: 20px 0;
-  background-color: #0f0f0f;
+background: linear-gradient(to top, #0f1a17, #000000);
+  color: #B5B5B5;
+  padding: 20px;
+  text-align: center;
+  
 }
+
 
 nav > a {
   border: 1px solid #3a3a3a;
@@ -46,6 +50,7 @@ nav > a:hover {
 }
 
 table {
+  float: right;
   border-collapse: collapse;
   margin: 40px auto;
   width: 70%;
@@ -96,10 +101,17 @@ td:hover {
 form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+text-align: center;
   max-width: 400px;
   margin: auto;
   font-family: "kurt";
+}
+fieldset {
+  border: 1px solid #3a3a3a;
+  padding: 20px;
+  background-color: #1c1c1c;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+
 }
 
 input,
@@ -120,7 +132,10 @@ button {
 button:hover {
   background-color: #e6bc00;
 }
-
+input[type="text"],
+input[type="email"]{
+  color: rgba(255, 255, 255, 0.9);
+}
 /* FOCUS */
 input:focus,
 textarea:focus,
@@ -131,7 +146,7 @@ select:focus {
   box-shadow: 6px rgba(255, 209, 0, 0.4);
 }
 
-/* VALID */
+
 input[type="text"]:valid,
 input[type="email"]:valid,
 input[type="password"]:valid,
@@ -159,9 +174,7 @@ select:invalid {
   background-size: 10px;
 }
 
-/* =========================
-   MENSAJES DE ESTADO
-========================= */
+
 .success {
   color: #6b7b3d;
 }
@@ -172,4 +185,12 @@ select:invalid {
 
 .focused {
   color: #ffd100;
+}
+footer{
+  clear:both;
+background: radial-gradient(circle at center, #5a4a3b, #0f0f0f);
+
+
+
+
 }
