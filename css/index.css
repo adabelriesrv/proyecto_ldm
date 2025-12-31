@@ -26,6 +26,9 @@ h1 {
   text-transform: uppercase;
   text-align: center;
 }
+#bienvenida {
+  border: #b0f503 2px dotted;
+}
 #inicio {
   float: right;
   color: rgb(252, 11, 11);
