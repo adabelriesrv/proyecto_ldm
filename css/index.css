@@ -2,7 +2,6 @@
    FUENTES
 ========================= */
 
-
 @font-face {
   font-family: "kurt";
   src: url("../fuentes/kurt/kurt-Bold.ttf");
@@ -19,23 +18,34 @@
   color: yellow;
   text-decoration: none;
 }
-h1{
+h1 {
   display: block;
   color: white;
   text-decoration: dotted underline;
-  font-size:  6em;
+  font-size: 6em;
   text-transform: uppercase;
   text-align: center;
 }
-
+#inicio {
+  float: right;
+  color: rgb(252, 11, 11);
+  text-decoration: dotted underline;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+#tituloini {
+  color: rgb(202, 253, 0);
+  font-size: 30px;
+  text-transform: uppercase;
+  float: left;
+}
 #princ {
   color: white;
 }
 
-
-
-nav,a
-header {
+nav,
+a header {
   font-family: "New Rocker", system-ui;
   display: flex;
   gap: 20px;
@@ -62,7 +72,6 @@ nav > a:hover {
   color: #0f0f0f;
   transform: rotate(10deg);
 }
-
 
 table {
   float: right;
@@ -108,8 +117,6 @@ td:hover {
   background-color: #3a3a3a;
 }
 
-
-
 form {
   display: flex;
   flex-direction: column;
@@ -133,8 +140,6 @@ legend {
   font-size: 14px;
   color: white;
 }
-
-
 
 input,
 textarea,
@@ -160,7 +165,6 @@ input[type="text"],
 input[type="email"] {
   color: rgba(255, 255, 255, 0.9);
 }
-
 
 input:focus,
 textarea:focus,
@@ -195,9 +199,6 @@ select:invalid {
   background-repeat: no-repeat;
   background-size: 10px;
 }
-
-
-
 
 footer {
   clear: both;
