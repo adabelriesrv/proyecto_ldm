@@ -31,7 +31,7 @@ h1 {
 #inicio {
   clear: both;
   color: #8b1e1e;
-  text-decoration: dotted underline;
+  
   font-size: 10px;
   text-transform: uppercase;
 }
@@ -60,6 +60,7 @@ a header {
 
 nav > a {
   background-color: #1e1e1e;
+  text-decoration: none;
   color: #d0d0d0;
   border: 1px solid #333;
   border-radius: 10px;
