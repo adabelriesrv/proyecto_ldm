@@ -12,7 +12,6 @@
   font-family: "New Rocker", system-ui;
   background-color: #0b0b0b;
   color: #e6e6e6;
-
 }
 
 h1 {
@@ -31,7 +30,7 @@ h1 {
 #inicio {
   clear: both;
   color: #8b1e1e;
-  
+
   font-size: 10px;
   text-transform: uppercase;
 }
@@ -171,9 +170,24 @@ textarea:invalid,
 select:invalid {
   border: 2px solid #8b1e1e;
   background-color: #1b1b1b;
+  background-image: url(../imagenesyvideos/forma-boton-incorrecto-3d_169241-5652.avif);
+  background-size: 15px;
+  background-repeat: no-repeat;
+
+  background-position: right 20px;
+}
+input:valid,
+select:valid,textarea:valid {
+  border: 2px solid #8b1e1e;
+  background-color: #1b1b1b;
+  background-image: url(../imagenesyvideos/valido.png);
+  background-size: 15px;
+  background-repeat: no-repeat;
+  padding: 15px;
+    background-position: right 20px;
 }
 
 footer {
   clear: both;
-  background: radial-gradient(circle at center, #3a3a3a, #0b0b0b);
+  background: radial-gradient(circle at center, #3a3a3a, #2600ff);
 }
