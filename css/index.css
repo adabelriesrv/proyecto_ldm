@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "kurt";
+  font-family:"kurt";
   src: url("../fuentes/kurt/kurt-Bold.ttf");
   font-family: New Rocker;
   src: url(../fuentes/New_Rocker/NewRocker-Regular.ttf);
@@ -173,7 +173,7 @@ select:invalid {
   background-image: url(../imagenesyvideos/forma-boton-incorrecto-3d_169241-5652.avif);
   background-size: 15px;
   background-repeat: no-repeat;
-
+font-size: ;
   background-position: right 20px;
 }
 input:valid,
