@@ -1,21 +1,28 @@
+/* Carga la fuente  "Kurt"  */
 @font-face {
   font-family: "Kurt";
   src: url("../fuentes/kurt/kurt-Bold.ttf");
 }
+
+/* Carga la fuente "New Rocker"  */
 @font-face {
   font-family: "New Rocker";
   src: url("../fuentes/New_Rocker/NewRocker-Regular.ttf");
 }
 
+/* estilo general: elimina márgenes y paddings,
+   ajusta el box model, define la fuente principal,
+   el color de fondo global y el color del texto */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: content-box;
   font-family: "New Rocker", system-ui;
   background-color: #0b0b0b;
   color: #e6e6e6;
 }
 
+/* Estilos para los títulos h1 */
 h1 {
   display: block;
   color: #f2f2f2;
@@ -25,18 +32,21 @@ h1 {
   text-align: center;
 }
 
+/* Contenedor de bienvenida con borde punteado amarillo */
 #bienvenida {
   border: #d6c600 2px dotted;
 }
 
+/* Sección de inicio: limpia flotados anteriores
+   y aplica estilo de texto */
 #inicio {
   clear: both;
   color: #8b1e1e;
-
   font-size: 10px;
   text-transform: uppercase;
 }
 
+/* Título te la clase tituloini alineado a la izquierda */
 #tituloini {
   color: #d6c600;
   font-size: 30px;
@@ -44,10 +54,13 @@ h1 {
   float: left;
 }
 
+/* Texto con clase principal */
 #princ {
   color: #f0f0f0;
 }
 
+/* Estilos para la barra de navegación y el header:
+   usa flexbox para centrar los elementos */
 nav,
 a header {
   display: flex;
@@ -59,6 +72,7 @@ a header {
   padding: 20px;
 }
 
+/* Estilo de los enlaces dentro del nav */
 nav > a {
   background-color: #1e1e1e;
   text-decoration: none;
@@ -69,12 +83,14 @@ nav > a {
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
+/* Efecto hover en los enlaces del menú */
 nav > a:hover {
   background-color: #262626;
   color: #d6c600;
   transform: rotate(8deg);
 }
 
+/* Estilos generales de la tabla */
 table {
   float: right;
   border-collapse: collapse;
@@ -85,6 +101,7 @@ table {
   font-family: "kurt";
 }
 
+/* Estilos comunes para celdas y encabezados */
 th,
 td {
   background-color: #d6c600;
@@ -94,32 +111,38 @@ td {
   letter-spacing: 1px;
 }
 
+/* Filas pares del cuerpo de la tabla */
 tbody td:nth-child(even) {
   background-color: #141414;
   color: #d6d6d6;
 }
 
+/* Filas impares del cuerpo de la tabla */
 tbody td:nth-child(odd) {
   background-color: #2f3820;
   color: #e0e0e0;
 }
 
+/* Hover en celdas pares */
 tbody td:nth-child(even):hover {
   background-color: #2a2a2a;
   color: #d6c600;
 }
 
+/* Hover en celdas impares */
 tbody td:nth-child(odd):hover {
   background-color: #3b4728;
   color: #e8dc3a;
 }
 
+/* Estilo del encabezado de la tabla */
 thead th {
   background-color: #0e0e0e;
   color: #d6c600;
   border-bottom: 2px solid #333;
 }
 
+/* Estilos del formulario */
 form {
   display: flex;
   flex-direction: column;
@@ -129,17 +152,20 @@ form {
   font-family: "kurt";
 }
 
+/* Agrupación visual del formulario */
 fieldset {
   border: 1px solid #333;
   padding: 20px;
   background-color: #1c1c1c;
 }
 
+/* Etiquetas y leyendas del formulario */
 label,
 legend {
   color: #f2f2f2;
 }
 
+/* Estilos comunes para inputs, textarea y botones */
 input,
 textarea,
 button {
@@ -149,16 +175,19 @@ button {
   padding: 10px;
 }
 
+/* Botón principal */
 button {
   background-color: #d6c600;
   color: #111;
   cursor: pointer;
 }
 
+/* Hover del botón */
 button:hover {
   background-color: #b8a900;
 }
 
+/* Campos enfocados */
 input:focus,
 textarea:focus,
 select:focus {
@@ -167,6 +196,7 @@ select:focus {
   background-color: #1b1b1b;
 }
 
+/* Campos inválidos: muestra icono de error */
 input:invalid,
 textarea:invalid,
 select:invalid {
@@ -178,6 +208,8 @@ select:invalid {
   font-size: 14px;
   background-position: right 20px;
 }
+
+/* Campos válidos: muestra icono de validación */
 input:valid,
 select:valid,
 textarea:valid {
@@ -190,15 +222,20 @@ textarea:valid {
   background-position: right 20px;
 }
 
+/* Estilos del pie de página */
 footer {
   clear: both;
   background: radial-gradient(circle at center, #3a3a3a, #2600ff);
 }
+
+/* Texto del footer */
 footer > p {
   text-align: center;
   padding: 10px;
   color: #f2f2f2;
 }
+
+/* Estilos del vídeo */
 video {
   display: block;
   margin: 20px auto;
