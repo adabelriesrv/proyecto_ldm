@@ -92,6 +92,7 @@ nav > a:hover {
 
 /* Estilos generales de la tabla */
 table {
+  position: static;
   float: right;
   border-collapse: collapse;
   margin: 40px auto;
