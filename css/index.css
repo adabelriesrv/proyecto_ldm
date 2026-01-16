@@ -144,7 +144,10 @@ thead th {
   color: #d6c600;
   border-bottom: 2px solid #333;
 }
-
+td:hover {
+height: 20em;
+width: 20em;
+}
 /* Estilos del formulario */
 form {
   display: flex;
@@ -227,6 +230,7 @@ textarea:valid {
 
 /* Estilos del pie de página */
 footer {
+
   clear: both;
   background: radial-gradient(circle at center, #3a3a3a, #2600ff);
 }
@@ -236,6 +240,9 @@ footer > p {
   text-align: center;
   padding: 10px;
   color: #f2f2f2;
+}
+footer>a {
+ float: left;
 }
 
 /* Estilos del vídeo */
