@@ -136,6 +136,8 @@ tbody td:nth-child(even):hover {
 tbody td:nth-child(odd):hover {
   background-color: #3b4728;
   color: #e8dc3a;
+  height: 20em;
+width: 20em;
 }
 
 /* Estilo del encabezado de la tabla */
@@ -227,6 +229,7 @@ textarea:valid {
 
 /* Estilos del pie de página */
 footer {
+
   clear: both;
   background: radial-gradient(circle at center, #3a3a3a, #2600ff);
 }
@@ -236,6 +239,9 @@ footer > p {
   text-align: center;
   padding: 10px;
   color: #f2f2f2;
+}
+footer>a {
+ float: left;
 }
 
 /* Estilos del vídeo */
