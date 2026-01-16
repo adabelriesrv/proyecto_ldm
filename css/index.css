@@ -252,3 +252,9 @@ video {
   width: 900px;
   height: 500px;
 }
+.lista-miembros {
+  display: flex;
+  margin: 50px;
+  padding: 25px;
+  list-style: none;
+}
