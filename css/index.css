@@ -53,7 +53,7 @@ h1 {
   text-transform: uppercase;
   float: left;
 }
-.pie{
+footer{
   background: radial-gradient(circle at center, #3a3a3a, #d5ff04);
 }
 /* Texto con clase principal */
