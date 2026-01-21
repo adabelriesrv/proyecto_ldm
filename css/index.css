@@ -53,7 +53,7 @@ h1 {
   text-transform: uppercase;
   float: left;
 }
-footer{
+footer {
   background: radial-gradient(circle at center, #3a3a3a, #d5ff04);
 }
 /* Texto con clase principal */
@@ -82,7 +82,10 @@ nav > a {
   border: 1px solid #333;
   border-radius: 10px;
   padding: 10px 16px;
-  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s,
+    transform 0.3s;
 }
 
 /* Efecto hover en los enlaces del menú */
@@ -106,8 +109,6 @@ table {
   border-radius: 10px;
   border-collapse: separate;
   border-spacing: 0;
-
-
 }
 
 /* Estilos comunes para celdas y encabezados */
@@ -118,24 +119,19 @@ td {
   padding: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
-    border: 3px solid yellow;
-
-
+  border: 3px solid yellow;
 }
 
 /* Filas pares del cuerpo de la tabla */
 tbody td:nth-child(even) {
   background-color: #141414;
   color: #d6d6d6;
-    
 }
 
 /* Filas impares del cuerpo de la tabla */
 tbody td:nth-child(odd) {
   background-color: #2f3820;
   color: #e0e0e0;
-   
-
 }
 
 /* Hover en celdas pares */
@@ -148,7 +144,6 @@ tbody td:nth-child(even):hover {
 tbody td:nth-child(odd):hover {
   background-color: #3b4728;
   color: #e8dc3a;
-
 }
 
 /* Estilo del encabezado de la tabla */
@@ -240,21 +235,24 @@ textarea:valid {
 
 /* Estilos del pie de página */
 footer {
-
-  clear: both;
+  display: flex;
+  flex-direction: column;     /* uno encima del otro */
+  justify-content: center;    /* centra verticalmente el bloque */
+  align-items: center;        /* centra horizontal */
+  gap: 8px;                   /* espacio entre p y a */
+  padding: 15px 0;
   background: radial-gradient(circle at center, #3a3a3a, #2600ff);
 }
 
-/* Texto del footer */
-footer > p {
-  text-align: center;
-  padding: 10px;
-  color: #f2f2f2;
-}
-footer>a {
- float: left;
+footer p {
+  margin: 0;
+  color: white;
 }
 
+footer a {
+  color: white;
+  text-decoration: none;
+}
 /* Estilos del vídeo */
 video {
   display: block;
@@ -273,5 +271,3 @@ img {
   width: 100%;
   height: 60%;
 }
-
- 
