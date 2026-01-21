@@ -127,12 +127,14 @@ td {
 tbody td:nth-child(even) {
   background-color: #141414;
   color: #d6d6d6;
+    
 }
 
 /* Filas impares del cuerpo de la tabla */
 tbody td:nth-child(odd) {
   background-color: #2f3820;
   color: #e0e0e0;
+   
 
 }
 
