@@ -102,6 +102,12 @@ table {
   background-color: #1e1e1e;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
   font-family: "kurt";
+  border: 3px solid yellow;
+  border-radius: 10px;
+  border-collapse: separate;
+  border-spacing: 0;
+
+
 }
 
 /* Estilos comunes para celdas y encabezados */
@@ -112,6 +118,8 @@ td {
   padding: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
+
+
 }
 
 /* Filas pares del cuerpo de la tabla */
@@ -124,6 +132,7 @@ tbody td:nth-child(even) {
 tbody td:nth-child(odd) {
   background-color: #2f3820;
   color: #e0e0e0;
+
 }
 
 /* Hover en celdas pares */
@@ -136,8 +145,7 @@ tbody td:nth-child(even):hover {
 tbody td:nth-child(odd):hover {
   background-color: #3b4728;
   color: #e8dc3a;
-  height: 60px;
-width: 6em;
+
 }
 
 /* Estilo del encabezado de la tabla */
