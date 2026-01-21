@@ -236,12 +236,12 @@ textarea:valid {
 /* Estilos del pie de página */
 footer {
   display: flex;
-  flex-direction: column;     /* uno encima del otro */
-  justify-content: center;    /* centra verticalmente el bloque */
-  align-items: center;        /* centra horizontal */
-  gap: 8px;                   /* espacio entre p y a */
+  flex-direction: column;    
+  justify-content: center;  
+  align-items: center;        
+  gap: 8px;                  
   padding: 15px 0;
-  background: radial-gradient(circle at center, #3a3a3a, #2600ff);
+  background: radial-gradient(circle at center, #3a3a3a, #000000);
 }
 
 footer p {
