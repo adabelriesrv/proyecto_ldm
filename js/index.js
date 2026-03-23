@@ -1,36 +1,49 @@
 window.onload = inicio;
 
 let usuario = {
-    dni: "20942599V",
-    nom: "Adam Thor Bellver Riera",
-    email: "adamthor@gmail.com"
+    dni: "",
+    nom: "",
+    email: ""
 };
 
-function inicio(){
+function inicio() {
     Pedirdatos();
     ValidarDatos(usuario);
 }
 
-function Pedirdatos(){
-    usuario.dni = prompt("Introduce el dni del cliente");
+function Pedirdatos() {
+    usuario.dni = prompt("Introduce el DNI del cliente");
     usuario.nom = prompt("Introduce el nombre del cliente");
     usuario.email = prompt("Introduce el email del cliente");
 }
 
-function ValidarDatos(usuario){
+function ValidarDatos(usuario) {
     let errores = [];
 
-    if(usuario.nom.trim().split(" ").length < 2){
-        errores.push("El nombre del cliente tiene que tener al menos 2 palabras");
+    // Validar nombre (mínimo 2 palabras)
+    if (usuario.nom.trim().split(" ").length < 2) {
+        errores.push("El nombre debe tener al menos 2 palabras");
     }
 
-    if (!/^\d{8}[a-zA-Z]$/.test(usuario.dni)){
-        errores.push("El dni ha de tener 8 números y una letra al final");
+    // Validar DNI (8 dígitos + 1 letra)
+    if (!/^\d{8}[a-zA-Z]$/.test(usuario.dni)) {
+        errores.push("El DNI debe tener 8 números + 1 letra");
     }
 
-    if (errores.length > 0){
+    if (errores.length > 0) {
         alert(errores.join("\n"));
     } else {
-        alert("Datos correctos");
+        // Formatear y mostrar datos correctos
+        let nombreFormateado = usuario.nom.split(" ")
+            .map(palabra => palabra.charAt(0).toUpperCase() + palabra.slice(1).toLowerCase())
+            .join(" ");
+        
+        let dniFormateado = usuario.dni.slice(0, 8) + usuario.dni.slice(8).toUpperCase();
+        
+        alert(
+            "DNI: " + dniFormateado + "\n" +
+            "Nom: " + nombreFormateado + "\n" +
+            "Email: " + usuario.email
+        );
     }
 }
