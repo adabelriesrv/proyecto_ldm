@@ -1,11 +1,10 @@
 window.onload = inicio;
 
-let usuario = {
-    dni: "",
-    nom: "",
-    email: ""
-};
-
+let usuario = [
+   { dni: "20932570V",nom: "Adam thor",email: "adabelrie@alu.edu.gva.es"},
+   { dni: "20985594A",nom: "Ingrid de Haros",email: "ingriddeharos19@gmail.com"},
+   { dni: "20936878R",nom: "Victor Molina",email: "vgvman271@gamil.com"}
+]
 function inicio() {
     Pedirdatos();
     ValidarDatos(usuario);
