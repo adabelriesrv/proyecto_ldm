@@ -2,8 +2,8 @@ window.onload = inicio;
 
 let usuario = [
    { dni: "20932570V",nom: "Adam Thor",email: "adabelrie@alu.edu.gva.es"},
-   { dni: "20985594A",nom: "Ingrid De Haros",email: "ingriddeharos19@gmail.com"},
-   { dni: "20936878R",nom: "Víctor García",email: "vgvman271@gamil.com"}
+   { dni: "20985594A",nom: "Ingrid De Haros",email: "ingrideharos19@gmail.com"},
+   { dni: "20936878R",nom: "Víctor García",email: "vgvman271@gmail.com"}
 ]
 function inicio() {
     Pedirdatos();
