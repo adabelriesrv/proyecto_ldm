@@ -41,7 +41,7 @@ function ValidarDatos(usuario) {
         
         alert(
             "DNI: " + dniFormateado + "\n" +
-            "Nom: " + nombreFormateado + "\n" +
+            "Nombre: " + nombreFormateado + "\n" +
             "Email: " + usuario.email
         );
     }
