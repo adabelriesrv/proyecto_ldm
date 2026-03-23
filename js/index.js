@@ -5,12 +5,14 @@ let usuario = [
    { dni: "20985594A",nom: "Ingrid De Haros",email: "ingrideharos19@gmail.com"},
    { dni: "20936878R",nom: "Víctor García",email: "vgvman271@gmail.com"}
 ]
+
 function inicio() {
     Pedirdatos();
     ValidarDatos(usuario);
 }
 
 function Pedirdatos() {
+    // Guardamos los datos en una propiedad nueva para no machacar el array
     usuario.dni = prompt("Introduce el DNI del cliente:");
     usuario.nom = prompt("Introduce el nombre y apellido del cliente:");
     usuario.email = prompt("Introduce el email del cliente:");
@@ -29,10 +31,21 @@ function ValidarDatos(usuario) {
         errores.push("El DNI debe tener 8 números + 1 letra.");
     }
 
+    // Comprobación de acceso
+    let existe = usuario.some(u => 
+        u.dni.toUpperCase() === usuario.dni.toUpperCase() && 
+        u.nom.toLowerCase() === usuario.nom.toLowerCase()
+    );
+
+    if (!existe) {
+        alert("Acceso denegado: No estás en la lista de autorizados.");
+        document.body.innerHTML = ""; // Borra la página si no eres un usuario autorizado
+        return;
+    }
+
     if (errores.length > 0) {
         alert(errores.join("\n"));
     } else {
-        // Formatear y mostrar datos correctos
         let nombreFormateado = usuario.nom.split(" ")
             .map(palabra => palabra.charAt(0).toUpperCase() + palabra.slice(1).toLowerCase())
             .join(" ");
@@ -40,6 +53,7 @@ function ValidarDatos(usuario) {
         let dniFormateado = usuario.dni.slice(0, 8) + usuario.dni.slice(8).toUpperCase();
         
         alert(
+            "Acceso Concedido\n" +
             "DNI: " + dniFormateado + "\n" +
             "Nombre: " + nombreFormateado + "\n" +
             "Email: " + usuario.email
