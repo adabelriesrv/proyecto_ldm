@@ -7,17 +7,17 @@ let usuario= {
 
 };
 function inicio(){
-pedirDatos();
+ValidarDatos(usuario);
 }
-function pedirDatos(){
-
-
-
-
+function Pedirdatos(){
+usuario.dni=prompt("Introduce el dni del cliente");
+usuario.nom=prompt("Introduce el nombre del cliente");
+usuario.email=prompt("Introduce el email del cliente");
 }
+
 function ValidarDatos(usuario){
 let errores=[];
-if(usuario.nom.slipt("").length !==2){
+if(usuario.nom.slipt("").length!==2){
     errores.push("el nombre del cliente tiene que tener 2 palabras");
 }
 if (!/^\d{8}[a-zA-Z]$/.test(usuario.dni)){
