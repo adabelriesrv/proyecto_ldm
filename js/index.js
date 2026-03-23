@@ -1,9 +1,9 @@
 window.onload = inicio;
 
 let usuario = [
-   { dni: "20932570V",nom: "Adam thor",email: "adabelrie@alu.edu.gva.es"},
-   { dni: "20985594A",nom: "Ingrid de Haros",email: "ingriddeharos19@gmail.com"},
-   { dni: "20936878R",nom: "Victor Molina",email: "vgvman271@gamil.com"}
+   { dni: "20932570V",nom: "Adam Thor",email: "adabelrie@alu.edu.gva.es"},
+   { dni: "20985594A",nom: "Ingrid De Haros",email: "ingriddeharos19@gmail.com"},
+   { dni: "20936878R",nom: "Víctor García",email: "vgvman271@gamil.com"}
 ]
 function inicio() {
     Pedirdatos();
@@ -11,9 +11,9 @@ function inicio() {
 }
 
 function Pedirdatos() {
-    usuario.dni = prompt("Introduce el DNI del cliente");
-    usuario.nom = prompt("Introduce el nombre del cliente");
-    usuario.email = prompt("Introduce el email del cliente");
+    usuario.dni = prompt("Introduce el DNI del cliente:");
+    usuario.nom = prompt("Introduce el nombre y apellido del cliente:");
+    usuario.email = prompt("Introduce el email del cliente:");
 }
 
 function ValidarDatos(usuario) {
@@ -21,12 +21,12 @@ function ValidarDatos(usuario) {
 
     // Validar nombre (mínimo 2 palabras)
     if (usuario.nom.trim().split(" ").length < 2) {
-        errores.push("El nombre debe tener al menos 2 palabras");
+        errores.push("El nombre debe tener al menos 2 palabras.");
     }
 
     // Validar DNI (8 dígitos + 1 letra)
     if (!/^\d{8}[a-zA-Z]$/.test(usuario.dni)) {
-        errores.push("El DNI debe tener 8 números + 1 letra");
+        errores.push("El DNI debe tener 8 números + 1 letra.");
     }
 
     if (errores.length > 0) {
